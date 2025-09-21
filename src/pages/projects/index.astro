@@ -34,11 +34,8 @@ const headings = [
     If you think it would be useful or interesting to collaborate on a project, you can donate to
     support my work or contact me to discuss a project.
   </p>
-  <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
-    <Icon class='size-5' name='receive-money' slot='before' />
-  </Button>
 
-  <h2 id='theme'>Theme</h2>
+  <h2 id='theme'>Research</h2>
   <ProjectSection
     projects={[
       {
@@ -107,36 +104,15 @@ const headings = [
     class='my-2'
     projects={[
       {
-        name: 'Rust Learning',
+        name: 'C/C++ Recap',
         description: 'Some notes and code about CWorld learning Rust',
-        links: [{ type: 'github', href: 'https://github.com/cworld1/rust-learning' }]
-      },
-      {
-        name: 'CS 213 Learning',
-        description: 'Notes, code and experiences for Introduction to Computer Systems course',
         links: [
-          {
-            type: 'github',
-            href: 'https://github.com/zhuozhiyongde/Introduction-To-Computer-System-2023Fall-PKU'
+          { 
+            type: 'page', 
+            href: '../../content/projects/ccpp-recap.md',
           }
         ]
-      }
-    ]}
-  />
-
-  <h2 id='others'>Others</h2>
-  <ProjectSection
-    projects={[
-      {
-        name: 'CWorld',
-        description: "CWorld's Github",
-        links: [{ type: 'github', href: 'https://github.com/cworld1' }]
       },
-      {
-        name: 'Arthals',
-        description: 'Arthals Github',
-        links: [{ type: 'github', href: 'https://github.com/zhuozhiyongde' }]
-      }
     ]}
   />
 
@@ -150,24 +126,6 @@ const headings = [
     <KeyIcon class='size-5' slot='before' />
   </Button>
 
-  <!-- sponsorship -->
-  <h2 id='sponsorship'>Sponsorship</h2>
-  <p>Please leave a message or contact me proactively after sponsorship.</p>
-  <Sponsorship
-    methods={[
-      { name: 'WeChat', icon: 'wechat-pay', image: wechat },
-      { name: 'Alipay', icon: 'alipay', image: alipay }
-    ]}
-  />
-  <p>Thanks to the following sponsors:</p>
-  <Sponsors
-    sponsors={[
-      { name: 'C*a（酷安@暴走の蜗牛）', amount: '2.00', date: '2019-07-02' },
-      { name: '华雄(QQ：1300****71)', amount: '5.00', date: '2019-12-30' },
-      { name: '◌(QQ：1934****45)', amount: '3.00', date: '2019-12-30' },
-      { name: 'Anonymous', amount: '20.00', date: '2022-04-06' }
-    ]}
-  />
 </PageLayout>
 
 <style>
